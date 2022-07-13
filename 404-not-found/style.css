@@ -1,0 +1,122 @@
+/*==================== 
+    Stylization Mobile Frist 
+====================*/
+
+/*========== REM measure ==========*/
+/* For screens bigger than 1080px: 16px(defalt) */
+/* For screens smaller than 1080px*/
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%; /* 15px */
+    }
+}
+/* Para telas mmenores que 720px*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+/* Header Section  */
+header p {
+    font-family: 'Inconsolata';
+    font-size: 1.5rem;
+    color: #333333;
+    font-weight: 700;
+    letter-spacing: -0.08rem;
+}
+
+/* Main Content  */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main img {
+    max-width: 95%;
+    margin: 4rem auto;
+}
+
+main .main-content {
+    font-family: 'Space Mono';
+}
+
+main .main-content .warning {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333333;
+    letter-spacing: 0.030rem;
+}
+
+main .main-content .warning-para {
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.035rem;
+    margin: 2rem 0;
+    color: #6c6b6b
+}
+
+main .main-content .back-to-home {
+    font-weight: 700;
+    margin: 2rem 0;
+    border: none;
+    background-color: #333333;
+    color: #FFF;
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+}
+
+
+/* Footer Section  */
+footer .copyright {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 700;
+    color: #BDBDBD;
+    text-align: center;
+}
+
+
+/* For screen size less than 720px */
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%; /* 14px */
+    }
+}
+
+
+/* for screen size more than 768px */
+@media (min-width: 768px) {
+    /*========== Main */
+    main {
+        flex-direction: row;
+        align-items: center;
+        gap: 6.25rem;
+    }
+    main img {
+        max-width: 50%;
+        margin: 0;
+    }
+    main .main-content .warning {
+        font-size: 4rem;
+    }
+    main .main-content .warning-para {
+        font-size: 1.5rem;
+        max-width: 75%;
+    }
+}
